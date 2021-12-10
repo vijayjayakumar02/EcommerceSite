@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button *ngIf="isUserLoggedIn" mat-icon-button class="example-icon">
+          <mat-icon>menu</mat-icon>
+      </button>
+      <mat-icon>shopping_cart</mat-icon>
+      <a class="navbar-brand" routerLink="/">Scubr</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              *ngIf="!isUserLoggedIn"
+              routerLink=""
+              >Login</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              *ngIf="!isUserLoggedIn"
+              routerLink="/register"
+              >Register</a
+            >
+          </li>
+          <li class="nav-item">
+            <app-search *ngIf="isUserLoggedIn"></app-search>
+          </li>
+          <!-- <li class="nav-item">
+              <button mat-icon-button id="align" *ngIf="isUserLoggedIn">
+                  <mat-icon matBadgeColor="warn">favorite</mat-icon>
+                  Favourite
+              </button>
+            </li>
+            <li class="nav-item">
+              <button mat-icon-button id="align" *ngIf="isUserLoggedIn">
+                  <mat-icon matBadgeColor="warn">shopping_cart</mat-icon>
+                  Cart
+              </button>
+            </li> -->
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              *ngIf="isUserLoggedIn"
+              routerLink="/user-management"
+              >User Management</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              routerLink=""
+              *ngIf="isUserLoggedIn"
+              (click)="onLogout()"
+              >Logout</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+            <button mat-icon-button id="align" *ngIf="isUserLoggedIn">
+                <mat-icon matBadgeColor="warn">favorite</mat-icon>
+                Favourite
+            </button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  

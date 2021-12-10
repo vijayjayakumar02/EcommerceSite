@@ -1,0 +1,12 @@
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\bin\Debug\net5.0\CustomModel.deps.json
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\bin\Debug\net5.0\CustomModel.dll
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\bin\Debug\net5.0\ref\CustomModel.dll
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\bin\Debug\net5.0\CustomModel.pdb
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\CustomModel.csproj.AssemblyReference.cache
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\CustomModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\CustomModel.AssemblyInfoInputs.cache
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\CustomModel.AssemblyInfo.cs
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\CustomModel.csproj.CoreCompileInputs.cache
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\CustomModel.dll
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\ref\CustomModel.dll
+C:\Users\vijayj\Desktop\E-commerce\backend\CustomModel\obj\Debug\net5.0\CustomModel.pdb

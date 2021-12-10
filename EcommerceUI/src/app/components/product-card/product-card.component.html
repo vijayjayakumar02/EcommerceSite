@@ -1,0 +1,56 @@
+<!-- <mat-card *ngFor="let product of productList">
+    <mat-card-header>
+        <mat-card-title>{{product.productName}}</mat-card-title>
+    </mat-card-header>
+</mat-card> -->
+
+<!-- <mat-card class="product-card mat-elevation-z2" [class.on-product-card-hover]="isActive" (mouseover)="isActive=true"
+    (mouseout)="isActive=false" *ngFor="let product of productList" style="margin-top: 10px;">
+    <mat-card-content class="image-card">
+        <a matTooltip="{{product.productName}}" matTooltipClass="example-tooltip"
+            aria-label="product name"><img class="preview-image" mat-card-image src="https://localhost:44302/upload/{{product.coverFileName}}"
+                alt="product cover image"></a>
+    </mat-card-content>
+    <mat-card-content>
+        <div class="card-title">
+            <a>
+                <strong>{{product.productName}}</strong>
+            </a>
+        </div>
+        <p>{{product.price | currency : 'INR'}}</p>
+    </mat-card-content>
+    <button mat-raised-button color="primary">
+        <span>
+          <mat-icon>shopping_cart</mat-icon>
+        </span>
+        Add to Cart
+      </button>
+</mat-card> -->
+
+<div class="content">
+    <div fxLayout="row wrap">
+      <div fxFlex="25%" *ngFor="let product of productList">
+        <mat-card class="product-card mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title>{{product.productName}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image matTooltip="{{[product.productName]}}" class="preview-image" src="https://localhost:44302/upload/{{product.coverFileName}}">
+          <mat-card-content>
+            <div class="card-title">
+                <a>
+                    <strong>{{product.productName}}</strong>
+                </a>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary">
+                <span>
+                  <mat-icon>shopping_cart</mat-icon>
+                </span>
+                Add to Cart
+              </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+</div>

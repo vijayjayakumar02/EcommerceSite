@@ -1,0 +1,21 @@
+<div class="row no-gutters pt-3">
+    <div class="col-md-3 col-sm-12">
+      <div class="filter-container">
+        <app-navlist></app-navlist>
+      </div>
+    </div>
+    <div class="col mb-3">
+      <div class="d-flex justify-content-start card-deck-container mb-4">
+        <div class="p-1">
+          <app-product-card></app-product-card>
+        </div>
+      </div>
+      <ng-template #nodata>
+        <div class="d-flex justify-content-center mt-4">
+          <h1 class="display-4" *ngIf="!isloading">
+            No books found.
+          </h1>
+        </div>
+      </ng-template>
+    </div>
+  </div>
