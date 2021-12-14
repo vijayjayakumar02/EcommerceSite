@@ -32,10 +32,12 @@ export class LoginComponent implements OnInit, OnDestroy {
       this.userService.login(email,password)
         .pipe(takeUntil(this.unsubscribe$))
         .subscribe(
-          () => {
-            this.router.navigate(["home"]);
-            localStorage.setItem('access',email);
-            console.log("Success");
+          (data:any) => {
+            if(data.responseCode == 1){
+              this.router.navigate(["home"]);
+              localStorage.setItem('access',JSON.stringify(data.dataSet));
+              console.log("Success");
+            }
           },
           () => {
             this.loginForm.reset();

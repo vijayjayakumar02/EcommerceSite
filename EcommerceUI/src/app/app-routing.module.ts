@@ -13,6 +13,8 @@ const routes: Routes = [
   {path:'display',component:ProductCardComponent},
   {path:'register',component:UserRegistrationComponent},
   {path:'home',component:HomeComponent},
+  {path:'filter',component:HomeComponent},
+  {path:'search', component:HomeComponent},
   {path:'add-product',component:ProductFormComponent, canActivate:[AuthGuard]},
   {path:'**',component:PageNotFoundComponent}
 ];

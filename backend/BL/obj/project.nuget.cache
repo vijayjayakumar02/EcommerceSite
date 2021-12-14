@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "cIVD7BJ5+9DWjq/S72QCowuprx0S6qLVSUGdUHyVU6J5bn2Xs0oyuNuAg2Xb5Gv2aueCTnXmCftLco1H787oiA==",
+  "dgSpecHash": "COyUUCd9RYKvFBuNSK07wrV3mn0fs4fewaOMHj1IkCt3N6M+6nbraCh1IlbwBY1IKTCXopQ100d4ow7FqysA2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\vijayj\\Desktop\\E-commerce\\backend\\BL\\BL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vijayj\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.12\\microsoft.aspnetcore.authorization.5.0.12.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.12\\microsoft.aspnetcore.metadata.5.0.12.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "gMKDBO0xqnVneIrlThRXKlLGl/cYptwIfOx3AZ10JEFvNLn/oFjJy4iBut2Agl3qoI0WtAeI4fyQh88iOAiMYg==",
+  "dgSpecHash": "LCZ8Bxwf6OhPE5UnIo9Eqt+JuDWAA+rlbI65tbPWj0zmBbvumrdDMFEqxbXpVL3LmewbztPhfpnyYfwDJUvv3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\vijayj\\Desktop\\E-commerce\\backend\\CustomModel\\CustomModel.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.12\\microsoft.aspnetcore.authorization.5.0.12.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.12\\microsoft.aspnetcore.metadata.5.0.12.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

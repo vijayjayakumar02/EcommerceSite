@@ -77,3 +77,5 @@ C:\Users\vijayj\Desktop\E-commerce\backend\WebAPI\bin\Debug\net5.0\CustomModel.p
 C:\Users\vijayj\Desktop\E-commerce\backend\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.NodeServices.dll
 C:\Users\vijayj\Desktop\E-commerce\backend\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.dll
 C:\Users\vijayj\Desktop\E-commerce\backend\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\vijayj\Desktop\E-commerce\backend\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\vijayj\Desktop\E-commerce\backend\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll

@@ -1,6 +1,7 @@
 using BL.BusinessLogics;
 using CustomIdentity.Data.Context;
 using CustomIdentity.Data.Entities;
+using CustomModel;
 using DAL.Data.Context;
 using DAL.DataAccess;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -69,6 +70,12 @@ namespace WebAPI
                 services.AddCors();
             });
 
+            services.AddAuthorization(config =>
+            {
+                config.AddPolicy(UserRoleModel.Admin, Policies.AdminPolicy());
+                config.AddPolicy(UserRoleModel.User, Policies.UserPolicy());
+            });
+
             services.AddScoped<ProductBL>();
             services.AddScoped< ProductDataAccessLayer>();
             services.AddScoped<BrandBL>();
@@ -118,6 +125,8 @@ namespace WebAPI
             app.UseRouting();
 
             app.UseCors(_loginOrigin);
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

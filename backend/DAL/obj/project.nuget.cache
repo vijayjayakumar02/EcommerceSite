@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "teaNJxddWSmG+uXklERREtHs0Ge+SrzsSZHsm0fUvQi5MaWhgtp+f6KzjZ7maQAFV/j+toioDULp89HO+Ve0ow==",
+  "dgSpecHash": "Wtk1Zp/7Y2AOlGHEVQ4dhHe65HPj75CcgujXEyep5pqSNX1fGOZ0o+HUPy8oZiD5RR2CVZQBF1EPtLMDY86C0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\vijayj\\Desktop\\E-commerce\\backend\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vijayj\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.12\\microsoft.aspnetcore.authorization.5.0.12.nupkg.sha512",
+    "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.12\\microsoft.aspnetcore.metadata.5.0.12.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\vijayj\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

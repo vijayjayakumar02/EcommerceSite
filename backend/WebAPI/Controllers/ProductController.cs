@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using CustomModel;
 using BL.IBusinessLogics;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebAPI.Controllers
 {
@@ -40,6 +41,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("Addproduct"), DisableRequestSizeLimit]
+        [Authorize(Policy = UserRoleModel.Admin)]
         public async Task<Object> AddProducts() 
         {
             ProductBindingModel product = JsonConvert.DeserializeObject<ProductBindingModel>(Request.Form["ProductFormData"].ToString());
