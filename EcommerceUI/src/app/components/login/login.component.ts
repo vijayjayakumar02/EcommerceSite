@@ -15,10 +15,15 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   constructor(private router:Router, private formBuilder: FormBuilder, private userService: UserService, private route:ActivatedRoute) { }
 
-  public loginForm=this.formBuilder.group({
-    email:['',[Validators.email,Validators.required]],
-    password:['',Validators.required]
-  })
+  loginForm = new FormGroup({
+    email: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required)
+  });
+
+  get email(){
+    return this.loginForm.get('email');
+  }
+
 
   ngOnInit(): void {
   }
@@ -40,6 +45,7 @@ export class LoginComponent implements OnInit, OnDestroy {
             }
           },
           () => {
+            console.log(Error);
             this.loginForm.reset();
             this.loginForm.setErrors({
               invalidLogin: true

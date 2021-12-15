@@ -2,12 +2,13 @@
     <div class="col-md-3 col-sm-12">
       <div class="filter-container">
         <app-navlist [category]="category"></app-navlist>
+        <app-price-filter (priceValue)="filterPrice($event)"></app-price-filter>
       </div>
     </div>
     <div class="col mb-3">
       <div class="d-flex justify-content-start card-deck-container mb-4">
-        <div class="p-1">
-          <app-product-card></app-product-card>
+        <div class="p-1" *ngFor="let product of products">
+          <app-product-card [product]="product"></app-product-card>
         </div>
       </div>
       <ng-template #nodata>

@@ -60,8 +60,7 @@ export class ProductFormComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.productService.categories.pipe(takeUntil(this.unsubscribe$)).subscribe(
       (categoryData: any) => {
-        var s = categoryData.responseCode;
-        this.categoryList = (categoryData.dataSet);
+        this.categoryList = categoryData
       },error=>{
         console.log('Error ocurred while fetching category List : ', error);
       });

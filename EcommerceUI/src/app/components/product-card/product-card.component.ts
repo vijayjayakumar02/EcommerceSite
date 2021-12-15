@@ -25,7 +25,7 @@ export class ProductCardComponent implements OnInit {
   ngOnInit(){
     this.productService.getAllProducts().pipe(takeUntil(this.unsubscribe$)).subscribe(
       (ProductData: any) => {
-        this.productList = (ProductData.dataSet);
+        this.productList = ProductData;
       },error=>{
         console.log('Error ocurred while fetching category List : ', error);
     });

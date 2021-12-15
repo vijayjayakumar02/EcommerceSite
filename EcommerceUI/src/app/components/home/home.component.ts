@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   public products: product[];
   public filterproduct: product[];
   category: string;
+  priceRange = Number.MAX_SAFE_INTEGER;
   searchItem: string;
   isloading: boolean;
 
@@ -41,17 +42,24 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.filterProductData();
     })
   }
+  filterPrice(value: number){
+    this.priceRange = value;
+    this.filterProductData();
+  }
 
   filterProductData(){
+
+    const filteredData = this.filterproduct.filter(p => p.price <= this.priceRange).slice();
+
     if(this.category){
-      this.products = this.filterproduct.filter(p => p.category.toLowerCase() === this.category.toLowerCase());
+      this.products = filteredData.filter(p => p.category.toLowerCase() === this.category.toLowerCase());
     }
     else if(this.searchItem){
-      this.products = this.filterproduct.filter(p => p.productName.toLowerCase().indexOf(this.searchItem) !== -1
+      this.products = filteredData.filter(p => p.productName.toLowerCase().indexOf(this.searchItem) !== -1
       || p.productName.toLowerCase().indexOf(this.searchItem)!=-1);
     }
     else{
-      this.products = this.filterproduct;
+      this.products = filteredData;
     }
     this.isloading = false;
   }

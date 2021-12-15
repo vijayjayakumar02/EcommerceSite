@@ -13,13 +13,13 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserRegistrationComponent } from './components/user-registration/user-registration.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
-import { NavlistComponent } from './components/sidenav/navlist/navlist.component';
+import { NavlistComponent } from './components/navlist/navlist.component';
 import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { ProductFilterComponent } from './components/product-filter/product-filter.component';
 import { HttpInterceptorService } from './interceptors/http-interceptor.service';
+import { PriceFilterComponent } from './components/price-filter/price-filter.component';
 
 
 
@@ -36,7 +36,7 @@ import { HttpInterceptorService } from './interceptors/http-interceptor.service'
     SearchComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ProductFilterComponent,
+    PriceFilterComponent,
   ],
   imports: [
     BrowserModule,

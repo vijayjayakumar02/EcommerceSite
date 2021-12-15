@@ -22,7 +22,7 @@
 
                         <mat-form-field class="full-width">
                             <mat-select placeholder="Brand" formControlName="Brand" required>
-                                <mat-option *ngFor="let category of categoryList" [value]="category.categoryId">
+                                <mat-option *ngFor="let category of categoryList" [value]="category.categoryName">
                                     {{category.categoryName}}
                                 </mat-option>
                             </mat-select>

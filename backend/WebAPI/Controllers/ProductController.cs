@@ -41,7 +41,6 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("Addproduct"), DisableRequestSizeLimit]
-        [Authorize(Policy = UserRoleModel.Admin)]
         public async Task<Object> AddProducts() 
         {
             ProductBindingModel product = JsonConvert.DeserializeObject<ProductBindingModel>(Request.Form["ProductFormData"].ToString());
@@ -90,9 +89,9 @@ namespace WebAPI.Controllers
                 var result = _productBL.GetAllProducts();
                 if (result != null)
                 {
-                    return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Fetched succesfully", result));
+                    return await Task.FromResult(result);
                 }
-                return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Empty", null));
+                return await Task.FromResult("Empty");
             }
             catch(Exception e)
             {
@@ -127,9 +126,9 @@ namespace WebAPI.Controllers
                 var result = _productBL.GetAllCategories();
                 if(result != null)
                 {
-                    return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Fetched succesfully", result));
+                    return await Task.FromResult(result);
                 }
-                return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Empty", null));
+                return await Task.FromResult("Empty");
             }
             catch(Exception e)
             {

@@ -26,8 +26,7 @@ export class NavlistComponent implements OnInit {
   fetchCategories(){
     this.productService.categories.pipe(takeUntil(this.unsubscribe$)).subscribe(
       (categoryData: any) => {
-        var s = categoryData.responseCode;
-        this.categoriesList = (categoryData.dataSet);
+        this.categoriesList = categoryData
       },error=>{
         console.log('Error ocurred while fetching category List : ', error);
       });
