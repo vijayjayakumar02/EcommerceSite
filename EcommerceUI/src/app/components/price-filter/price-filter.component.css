@@ -1,6 +1,34 @@
-.docs-example-viewer-body {
-    padding: 15px 10px;
-}
-.docs-example-viewer-wrapper{
-    margin-top: 50px;
-}
+.docs-example-viewer-title {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    padding: 8px 20px;
+    color: black;
+  }
+  
+  .docs-example-viewer-title-spacer {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .docs-example-viewer-body {
+    padding: 15px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .docs-example-viewer-wrapper {
+    border: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+    margin: 1em auto;
+    border-radius: 4px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
