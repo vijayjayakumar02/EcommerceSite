@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ProductRecordsComponent } from './components/admin/product-records/product-records.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'filter',component:HomeComponent},
   {path:'search', component:HomeComponent},
+  {path: 'admin-product-details', component: ProductRecordsComponent},
   {path:'add-product',component:ProductFormComponent, canActivate:[AuthGuard]},
   {path:'**',component:PageNotFoundComponent}
 ];

@@ -20,6 +20,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HttpInterceptorService } from './interceptors/http-interceptor.service';
 import { PriceFilterComponent } from './components/price-filter/price-filter.component';
+import { ProductRecordsComponent } from './components/admin/product-records/product-records.component';
 
 
 
@@ -37,6 +38,7 @@ import { PriceFilterComponent } from './components/price-filter/price-filter.com
     HomeComponent,
     PageNotFoundComponent,
     PriceFilterComponent,
+    ProductRecordsComponent,
   ],
   imports: [
     BrowserModule,

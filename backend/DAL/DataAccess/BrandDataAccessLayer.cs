@@ -1,5 +1,5 @@
-﻿using DAL.Data.Context;
-using DAL.Data.ScaffoldedEntities;
+﻿using DAL.Data.ScaffoldedEntities;
+using DAL.Entity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,8 +11,8 @@ namespace DAL.DataAccess
 {
     public class BrandDataAccessLayer
     {
-        private readonly ECommerceDBContext _db;
-        public BrandDataAccessLayer(ECommerceDBContext db)
+        private readonly EcommercedbContext _db;
+        public BrandDataAccessLayer(EcommercedbContext db)
         {
             this._db = db;
         }

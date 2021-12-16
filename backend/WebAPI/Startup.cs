@@ -2,8 +2,8 @@ using BL.BusinessLogics;
 using CustomIdentity.Data.Context;
 using CustomIdentity.Data.Entities;
 using CustomModel;
-using DAL.Data.Context;
 using DAL.DataAccess;
+using DAL.Entity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,8 +35,9 @@ namespace WebAPI
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDbContext<ECommerceDBContext>(options => options.UseSqlServer(
+            services.AddDbContext<EcommercedbContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
+
 
             services.AddIdentity<AppUser, AppRole>(options => { })
                   .AddEntityFrameworkStores<AppDbContext>();

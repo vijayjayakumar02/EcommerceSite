@@ -40,6 +40,7 @@ namespace WebAPI.Controllers
             }
         }
 
+
         [HttpPost("Addproduct"), DisableRequestSizeLimit]
         public async Task<Object> AddProducts() 
         {
@@ -99,6 +100,20 @@ namespace WebAPI.Controllers
             }
         }
 
+        [HttpGet("GetProductList")]
+        public IActionResult GetProductsList(string? sentence, int? pageIndex = 0, int? pageSize = 5)
+        {
+            if(pageSize == 0)
+            {
+                IEnumerable<ProductListBindingModel> getProductDetails1 = _productBL.getProductList(sentence, pageIndex, pageSize + 5);
+                return Ok(getProductDetails1);
+            }
+            else
+            {
+                IEnumerable<ProductListBindingModel> getProductsDetails2 = _productBL.getProductList(sentence, pageIndex, pageSize);
+                return Ok(getProductsDetails2);
+            }
+        }
 
         [HttpPost("AddCategory")]
         public async Task<Object> AddCategory(AddCategoryBindingModel model)

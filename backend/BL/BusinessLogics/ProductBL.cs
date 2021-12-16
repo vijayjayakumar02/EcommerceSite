@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using DAL.Entity;
 
 namespace BL.BusinessLogics
 {
@@ -67,6 +68,29 @@ namespace BL.BusinessLogics
             }
         }
 
+        public IEnumerable<ProductListBindingModel> getProductList(string? sentence, int? pageIndex, int? pageSize)
+        {
+            List<uspGetProductListResult> products = _productDAL.getProductsList(sentence, pageIndex, pageSize).ToList();
+
+            List<ProductListBindingModel> product = new List<ProductListBindingModel>();
+
+            for(int i = 0; i < products.Count; i++)
+            {
+                ProductListBindingModel productList = new ProductListBindingModel()
+                {
+                    ProductId = products[i].ProductID,
+                    ProductName = products[i].ProductName,
+                    Category = products[i].Category,
+                    Price = products[i].Price,
+                    Description = products[i].Description,
+                    BrandId = products[i].BrandID,
+                    TotalCount = products[i].TotalCount
+                };
+                product.Add(productList);
+            }
+            return product;
+        }
+            
         public Product ConvertBindingModelToModel(ProductBindingModel bm)
         {
             return new Product()

@@ -14,5 +14,6 @@ namespace BL.IBusinessLogics
         bool AddCategory(AddCategoryBindingModel model);
         bool AddProduct(ProductBindingModel product);
         List<Product> GetAllProducts();
+        public IEnumerable<ProductListBindingModel> getProductList(string? sentence, int? pageIndex, int? pageSize);
     }
 }

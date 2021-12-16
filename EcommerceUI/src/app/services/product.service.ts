@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Categories } from '../models/categories';
 import { map, shareReplay } from 'rxjs';
 import { product } from '../models/product';
+import { productList } from '../models/productList';
 
 @Injectable({
   providedIn: 'root'
@@ -27,4 +28,9 @@ export class ProductService {
   getProductById(id: number) {
     return this.products.pipe(map(prod => prod.find(p => p.productId === id)));
   }
+
+  getProductList(sentence:string|"", pageIndex:number|0, pageSize:number|0){
+    return this.http.get<productList[]>(this.baseURL+'GetProductList/'+`?sentence=${sentence}&pageIndex=${pageIndex}&pageSize=${pageSize}`)
+  }
 }
+

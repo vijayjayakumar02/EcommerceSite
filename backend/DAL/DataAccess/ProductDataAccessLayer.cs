@@ -1,5 +1,6 @@
-﻿using DAL.Data.Context;
+﻿using CustomModel;
 using DAL.Data.ScaffoldedEntities;
+using DAL.Entity;
 using DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -12,8 +13,8 @@ namespace DAL.DataAccess
 {
     public class ProductDataAccessLayer: IProductService
     {
-        private readonly ECommerceDBContext _db;
-        public ProductDataAccessLayer(ECommerceDBContext db)
+        private readonly EcommercedbContext _db;
+        public ProductDataAccessLayer(EcommercedbContext db)
         {
             this._db = db;
         }
@@ -71,5 +72,11 @@ namespace DAL.DataAccess
                 throw;
             }
         }
+
+        public IEnumerable<uspGetProductListResult> getProductsList(string sentence, int? pageIndex, int? pageSize)
+        {
+            List<uspGetProductListResult> products = _db.Procedures.uspGetProductListAsync(sentence, pageIndex, pageSize).Result;
+            return products;
+        }   
     }
 }
